@@ -6,9 +6,8 @@ These tests aren't exactly fair, since ts-node does need to do a lot
 more work, but 15 seconds does seem like a long time to me, especially
 when the snapshot itself is only ~10MB.
 
-On Node 14, heap snapshots seem to take minutes, I never saw it
-complete. Once I left it to run while I made a coffee, and when I
-returned my machine had 'restarted because of an error'. :shrug:
+On Node 14, heap snapshots seem to take minutes, I never had the patience
+to wait for it to complete.
 
 ```bash
 > node -v
