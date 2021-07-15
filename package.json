@@ -15,7 +15,8 @@
     "test-ts": "ts-node index.mjs",
     "test-ts-heapdump": "ts-node heapdump.mjs",
     "test-node": "node index.mjs",
-    "test": "npm run test-node && npm run test-ts-heapdump && npm run test-ts",
+    "test-ts-transpile-only": "ts-node --transpile-only index.mjs",
+    "test": "npm run test-node && npm run test-ts",
     "clean": "rm Heap*"
   },
   "author": "Tim Oxley <secoif@gmail.com>",
