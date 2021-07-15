@@ -1,7 +1,6 @@
 import { writeHeapSnapshot } from 'v8'
 import { basename } from 'path'
-
-const name = basename(process.argv[0])
+const name = process.env.npm_lifecycle_event || basename(process.argv[0])
 console.log(name, '>>')
 console.time(name)
 console.log(writeHeapSnapshot())
